@@ -1,0 +1,23 @@
+development:
+  adapter: mysql
+  database: remix-development
+  password:
+  pool: 5
+  timeout: 5000
+  username: root
+
+test:
+  adapter: mysql
+  database: remix-test
+  password:
+  pool: 5
+  timeout: 5000
+  username: root
+
+production:
+  adapter:  mysql
+  database: remix-production
+  password:
+  pool: 5
+  timeout: 5000
+  username: root

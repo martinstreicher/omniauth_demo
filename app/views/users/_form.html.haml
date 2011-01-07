@@ -1,0 +1,8 @@
+- simple_form_for(user, :url => user_url) do |f|
+  = f.input :skill_values, :label => 'What do you know?', 
+    :input_html => { :value => to_list(current_user.skills) }
+  = f.input :connection_values, :label => 'Who do you know?', 
+    :input_html => { :value => to_list(current_user.connections) }
+  = f.input :interest_values, :label => 'What are you interested in?', 
+    :input_html => { :value => to_list(current_user.interests) }
+  = f.submit 'Update profile'
