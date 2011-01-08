@@ -3,6 +3,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users, :force => true do |t|
       t.confirmable
       t.database_authenticatable
+      t.invitable
       t.recoverable
       t.rememberable
       t.trackable
