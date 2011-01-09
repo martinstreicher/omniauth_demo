@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/martinstreicher/linkedin.git
+  revision: 3fcb0de645b00a724dad2b8e8208fb4d9f985131
+  specs:
+    linkedin (0.1.8)
+      crack (>= 0.1.4)
+      crack (~> 0.1.4)
+      nokogiri
+      oauth (>= 0.4.4)
+      oauth (>= 0.4.4)
+
 GEM
   remote: http://gemcutter.org/
   remote: http://gems.github.com/
@@ -71,6 +82,7 @@ GEM
     columnize (0.3.2)
     concerned_with (0.1.0)
     configuration (1.2.0)
+    crack (0.1.8)
     culerity (0.2.14)
     daemons (1.0.10)
     database_cleaner (0.6.0)
@@ -359,10 +371,11 @@ DEPENDENCIES
   inherited_resources_views
   jslint_on_rails
   koala
+  linkedin!
   metric_fu
   mongrel (= 1.2.0.pre2)
   mysql
-  oauth (~> 0.4.0)
+  oauth (~> 0.4.4)
   omniauth (>= 0.1.6)
   rails (>= 3.0.3)
   rcov
