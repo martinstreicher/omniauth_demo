@@ -128,7 +128,10 @@ GEM
     inherited_resources_views (0.4.1)
       inherited_resources (>= 1.0)
     jslint_on_rails (1.0.5)
+    json (1.4.6)
     json_pure (1.4.6)
+    koala (0.10.0)
+      json (>= 1.0)
     launchy (0.3.7)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
@@ -355,6 +358,7 @@ DEPENDENCIES
   inherited_resources
   inherited_resources_views
   jslint_on_rails
+  koala
   metric_fu
   mongrel (= 1.2.0.pre2)
   mysql
