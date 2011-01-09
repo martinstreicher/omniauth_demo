@@ -4,14 +4,15 @@ class User < ActiveRecord::Base
     
   has_many :authentications
   
-  def apply_omniauth(omniauth)  
+  def apply_omniauth(omniauth)
+    debugger
+    secret = omniauth['credentials']['secret'] 
+    token = omniauth['credentials']['token']
     omniauth_params = { 
       :provider => omniauth ['provider'], 
       :uid      => omniauth['uid'],
-      :token    => omniauth['credentials']['token'],
-      :secret   => omniauth['credentials']['secret']      
-    }
-    
+      :token    => token,
+      :secret   => secret }
     self.authentications.build omniauth_params
     self.confirmed_at ||= Time.now
   end  
